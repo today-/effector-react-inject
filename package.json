@@ -1,0 +1,46 @@
+{
+  "name": "effector-react-inject",
+  "version": "0.1.0",
+  "description": "effector-react-inject",
+  "main": "lib/index.js",
+  "files": [
+    "lib"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/today-/effector-react-inject.git"
+  },
+  "scripts": {
+    "test": "tslint -c tslint.json src/**/*.ts?",
+    "build": "./node_modules/.bin/tsc"
+  },
+  "types": "./lib/index.d.ts",
+  "author": "today- (https://github.com/today-)",
+  "license": "ISC",
+  "keywords": [
+    "effector",
+    "inject",
+    "connect",
+    "react",
+    "redux",
+    "state"
+  ],
+  "homepage": "https://github.com/today-/effector-react-inject",
+  "dependencies": {
+    "react": "^16.8.3",
+    "effector": "^0.18.2",
+    "effector-react": "^0.18.6"
+  },
+  "devDependencies": {
+    "@types/react": "^16.8.6",
+    "typescript": "^3.3.0",
+    "tslint": "^5.13.1",
+    "tslint-loader": "^3.5.4",
+    "tslint-react": "^3.6.0"
+  },
+  "peerDependencies": {
+    "effector": "^0.18.2",
+    "effector-react": "^0.18.6",
+    "react": "^0.13.0 || ^0.14.0 || ^15.0.0 || ^16.0.0"
+  }
+}
