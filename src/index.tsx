@@ -10,7 +10,7 @@ export type Injected<Stores, K extends keyof Stores = keyof Stores> = Partial<{
 
 export function inject<Props, States extends any, K extends string>(
     stores: {[key in K]: Store<States[key]>},
-) {
+): any {
     const merged = createStoreObject(stores);
     const Consumer = createStoreConsumer(merged);
 
