@@ -7,17 +7,16 @@ Inject [Effector](https://github.com/zerobias/effector)'s state to React compone
 #### Connecting to React components
 
 ```jsx harmony
-import { todos } from './effector/stores/todos';
 
-export const Todos = inject({ todos })(TodoList);
+export const Todos = inject({ todos, user })(TodoList);
 ```
 
-`TodoList` component then will receive `todos` prop with state from `todos` effector store
+`TodoList` component then will receive `todos` and `user` props with state from `todos` and `user` effector stores respectively.
 
 #### Connecting to React class components using decorators
 
 ```jsx harmony
-@inject({ todos })
+@inject({ todos, user })
 export class TodoList extends React.Component {
 ```
 
@@ -30,7 +29,7 @@ export class TodoList extends React.Component {
 ```typescript jsx
 import { inject, Injected } from 'effector-react-inject';
 
-const stores = { todos };
+const stores = { todos, user };
 
 type TodoListProps = OwnProps & Injected<typeof stores>;
 
@@ -41,7 +40,7 @@ class TodoList extends React.Component<TodoListProps> {
 
 - Classic `redux-connect`-like HOC syntax, can be easily composed.
 
-- Less dependent on Effector's core API.
+- Less dependent on Effector's core API, especially if injecting multiple stores.
 
 - Can be used as a decorator for React class components
 
