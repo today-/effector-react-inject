@@ -27,7 +27,6 @@
   ],
   "homepage": "https://github.com/today-/effector-react-inject",
   "dependencies": {
-    "react": "^16.8.3",
     "effector": "^0.18.2",
     "effector-react": "^0.18.6"
   },
