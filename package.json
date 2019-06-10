@@ -1,6 +1,6 @@
 {
   "name": "effector-react-inject",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "effector-react-inject",
   "main": "lib/index.js",
   "files": [
